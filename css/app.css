@@ -1,0 +1,10 @@
+
+#sidemenu {
+	margin-top: 2em;
+}
+
+[data-magellan-expedition], 
+[data-magellan-expedition-clone] {
+	background-color: #F2f2f2;
+}
+
