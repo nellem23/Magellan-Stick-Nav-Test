@@ -21,7 +21,17 @@
 	background-color: #F2f2f2;
 }
 
+.magellan-scrollnav {
+  width: 25%;
+}
+.magellan-scrollnav [data-magellan-expedition], .magellan-scrollnav [data-magellan-expedition-clone] {
+  width: 250px;
+  min-width: 0;
+}
 
+
+
+/*
 @media only screen and (max-width: 100%) {
 
-} 
+} */
