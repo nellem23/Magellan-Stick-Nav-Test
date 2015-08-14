@@ -21,8 +21,7 @@
 	background-color: #F2f2f2;
 }
 
-@media screen and (max-width: 100%){
- ul.sub-nav [data-magellan-expedition]{
- 	display: none;
-}
 
+@media only screen and (max-width: 100%) {
+
+} 
