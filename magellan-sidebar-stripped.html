@@ -10,10 +10,36 @@
   </head>
   <body>
   <div class="row">
-    <!-- Start Sidemenu -->
+    <!-- Fixed Sidemenu for full width -->
     <div class="small-0 medium-0 large-2 columns">
-      <div id="sidemenu">
-        <ul class="sub-nav" data-magellan-expedition="fixed">
+      <nav>
+        <ul class="custom-side-nav hide-for-medium-down">
+          <li><a href="#one">one</a></li>
+          <li><a href="#two">two</a></li>
+          <li><a href="#three">three</a></li>
+          <li><a href="#four">four</a></li>
+          <li><a href="#five">five</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Fixed topmenu for smaller width -->
+    <div class="fixed sticky">
+      <nav class="custom-top-bar top-bar hide-for-large-up" data-topbar role="navigation">
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li class="active"><a href="#one">one</a></li>
+            <li class=""><a href="#two">two</a></li>
+            <li class=""><a href="#three">three</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <!-- Start Magellan -->
+    <div class="small-0 medium-0 large-2 columns">
+      <div id="magellan" class="magellan-scrollnav">
+        <ul class="sub-nav" data-magellan-expedition="fixed" options="threshold:0;destination_threshold:20;fixed_top:0">
           <li data-magellan-arrival="one" class=""><a href="#one">one</a></li>
           <li data-magellan-arrival="two" class="active"><a href="#two">two</a></li>
           <li data-magellan-arrival="three" class=""><a href="#three">three</a></li>
@@ -22,7 +48,7 @@
         </ul>
       </div>    
     </div>
-    <!-- End Sidemenu -->
+<!--     Main section-->    
     <div id="main" class="small-12 medium-12 large-10 columns">
       <div id="one"> 
         <h3 data-magellan-destination="one">one </h3>
@@ -62,7 +88,17 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation({
+        // $(window).scroll(function() {
 
+        // if ($(":in-viewport").scrollTop()>0)
+        //  {
+        //     $('.custom-side-nav').fadeOut();
+        //  }
+        // else
+        //  {
+        //   $('#magellan').fadeIn();
+        // }
+ // });
        });
     </script> 
 </body>
