@@ -1,47 +1,40 @@
-.active {
-    background-color:yellow;
-}
 
+/*CLASSES FOR HIGHLIGHT ON SCROLL*/
+.active {
+    background-color:#576C8A;
+    color: #ffffff;
+}
 a.section {
     font-weight:bold;
     font-size:25px;
 }
-
 /*TOP BAR */
-
 .top-bar{
 	background-color: #EFEFEF;
 	z-index:100;
 	height: 4em;
 	color: #464044;
 }
-
 .top-bar-section li:not(.has-form) a:not(.button){
 	background-color: transparent;
     margin-right: 3em;
     text-align: center;
     font-size: 14px;
     color: #000000;
-    top: 0;}
-
+    top: 0;
+}
 .top-bar-section li:not(.has-form) a:not(.button):hover {
 	background-color: #878787;
 	border-radius: .8em;
 	color: #ffffff;
 }
-
 .top-bar-section li.active:not(.has-form) a:not(.button){
 	
 }
-
-
 .top-bar-section ul li{
 	background-color: transparent;
 }
-
-.custom-top-bar{
-
-}
+.custom-top-bar{}
 
 /*SIDE NAV */
 .custom-side-nav {
@@ -63,11 +56,4 @@ ol .custom-side-nav {
 	list-style: none;
 	margin-top: 1em;
 	margin-bottom: 1em;
-}
-
-
-/*MAGELLAN MENU*/
-[data-magellan-expedition], 
-[data-magellan-expedition-clone] {
-	background-color: #F2f2f2;
 }
